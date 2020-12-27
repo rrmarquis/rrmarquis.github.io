@@ -1,41 +1,38 @@
-body{
-    background-color: ghostwhite;
-}
-
-header{
-    background-color: #e8e8e8;
-    margin-bottom: 30px;
-    box-shadow: 10px 10px 5px #888888;
-    padding-bottom: 30px;
-} 
-
-.container{
-    width: 960px;
-    margin: 0 auto;
-    background-color: ghostwhite;
-}
-
-#logo{
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.nav_menu{
-    list-style: none;
+body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
+    background-color: ghostwhite;
+    background-image: url("gplay.png");
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.nav_menu {
+    list-style: none;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
 }
 
-.nav_menu li{
+.nav_menu li {
     display: inline-block;
     min-width: 8em;
     margin-right: 0.5em;
 }
 
-.nav_menu li a:link,
-.nav_menu li a:visited{
-    background-color: aqua;
+.nav_menu li a:link, .nav_menu li a:visited {
+    background-color: floralwhite;
+    color: black;
     display: block;
     padding: 0.2em;
     text-decoration: none;
@@ -47,69 +44,117 @@ header{
     box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5);
 }
 
-.nav_menu li a:hover{
-    background-color: aquamarine;
-    -webkit-transform: scale(1.1,1.1);
-    -ms-transform: scale(1.1,1.1);
-    transform: scale(1.1,1.1);
+.nav_menu li a:hover {
+    background-color: antiquewhite;
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 
-.nav_menu a{
+.nav_menu li a.active {
+    background-color: burlywood;
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.nav_menu a {
     display: block;
     width: 80px;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-#mainBody{
-    background-color: ghostwhite;
+.column {
+    padding: 0 8px;
+    text-align: center;
 }
 
-#welcomeDiv{
-    background-color: #e8e8e8;
-    float: left;
-    width: 70%;
-    margin-right: 20px;
+.card {
+    position: relative;
+    display: inline-block;
+    height: 300px;
+    vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 15px 8px 8px 0;
+    min-width: 360px;
+    width: 30%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: floralwhite;
+}
+
+.card a {
+    text-decoration: none;
+    color: crimson;
+}
+
+.card a:hover {
+    color: rgba(43, 43, 77, 0.5);
+}
+
+.about-section {
     padding: 15px;
-    margin-left: 10px;
-    box-shadow: 10px 10px 5px #888888;
-}
-
-#newsLetter{
-    background-color: #e8e8e8;
-    float: left;
-    padding: 15px;
-    width: 20%;
-    margin-bottom: 30px;
-    box-shadow: 10px 10px 5px #888888;
-}
-#leftDiv{
-    background-color: #e8e8e8;
-    float: left;
-    width: 40%;
-    height: 200px;
-    padding: 10px;
-    margin: 20px;
-    box-shadow: 10px 10px 5px #888888;
-}
-#rightDiv{
-    background-color: #e8e8e8;
-    float: right;
-    width: 40%;
-    height: 200px;
-    padding: 10px;
-    margin: 20px;
-    box-shadow: 10px 10px 5px #888888;
-}
-
-footer{
-    height: 50px;
-    background-color: black;
+    text-align: center;
+    background-color: #474e5d;
     color: white;
-    text-align: right;
-    padding-right: 20px;
-    padding-top: 15px;
-    box-shadow: 10px 10px 5px #888888;
+}
+
+footer {
+    padding: 8px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    padding-top: .5em;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+    font-weight: bold;
+}
+
+/*
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 40%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+*/
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        display: block;
+    }
 }
