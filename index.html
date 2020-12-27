@@ -3,54 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <title>Page Title</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-
-<div class="about-section">
-    <h1>Roger Marquis</h1>
-    <p>Omaha, Nebraska</p>
-</div>
-<ul class="nav_menu">
-    <li><a class=active href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
-<div class="clear"></div>
-
-<header>
-
-</header>
-
-<div class="row">
-    <div class="column">
-        <div class="card">
-            <div class="container">
-                <p class="title">Welcome to my Portfolio</p>
-                <p>Hello, and thank you for visiting my website.
-                    <br>My name is Roger Marquis.
-                </p>
-                <p>I am a software developer and web designer based out of Omaha, NE.<br>
-                    I received my A.S. in Computer Technology in 2019 and expect to receive a B.S. in Computer Science at the end of Spring 2021.</p>
-                <p>Primary Languages: HTML, CSS, XML, SQL, JavaScript, and Java. </p>
+<body>
+    <div class="container">
+        <header>
+            <div id="logo"><a href="#"><img src="JustDoIt%20Logo.png" alt="#"></a></div>
+            <ul class="nav_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="clear"></div>
+        </header>
+        <section id="mainBody">
+            <div id="welcomeDiv">
+                <h2>Welome to my page</h2>
             </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="column">
-        <div class="card">
-            <div class="container">
-                <p class="title">Resume</p>
-                <p><a href="https://drive.google.com/file/d/1k95wkRtDgn9xFPDoxR7EP-Qnv72jc_ix/view?usp=sharing">
-                        Link to PDF</a>
-                    <br>(google drive)
-                </p>
+            <div id="newsLetter">
+                <form action="action_page.php" method="POST">
+                    <input type="text" name="Name">
+                    <br>
+                    <input type="email" name="Email">
+                    <br><br>
+                    <input type="submit" name="Submit">
+                </form>
             </div>
-        </div>
+
+            <div class="clear"></div> 
+
+            <div id="leftDiv">
+                <p>LeftDiv</p>
+            </div>
+            <div id="rightDiv">
+                <p>RightDiv</p>
+            </div>
+        </section>
+        <div class="clear"></div>
+        <footer>Copyright Roger Marquis</footer>
     </div>
-</div>
-<footer>
-    <p> <small>&copy; Copyright 2020, Roger Marquis</small> </p>
-</footer>
+</body>
+
+</html>
