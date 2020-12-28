@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0 0 60px 0;
     height: 100%;
     background-color: ghostwhite;
     background-image: url("gplay.png");
@@ -9,7 +9,8 @@ body {
 
 html {
     box-sizing: border-box;
-    height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 *, *:before, *:after {
@@ -26,7 +27,7 @@ html {
 
 .nav_menu li {
     display: inline-block;
-    min-width: 8em;
+    min-width: 6em;
     margin-right: 0.5em;
 }
 
@@ -73,7 +74,6 @@ html {
 }
 
 .card {
-    position: relative;
     display: inline-block;
     height: 300px;
     vertical-align: top;
@@ -104,17 +104,19 @@ html {
 }
 
 footer {
-    padding: 8px;
     text-align: center;
     background-color: #474e5d;
     color: white;
-    position: fixed;
+    right: 0;
     bottom: 0;
+    left: 0;
+    position: absolute;
     width: 100%;
 }
 
 .container {
     padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 .container::after, .row::after {
@@ -147,14 +149,8 @@ footer {
 }
 */
 
-@media screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) {
     .column {
-        width: 100%;
-        display: block;
-    }
-
-    .card {
-        width: 100%;
-        display: block;
+        width: 80%;
     }
 }
