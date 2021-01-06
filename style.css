@@ -23,6 +23,7 @@ html {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
+    background-image: url("3px-tile.png");
 }
 
 .nav_menu li {
@@ -113,6 +114,7 @@ footer {
     left: 0;
     position: absolute;
     width: 100%;
+    background-image: url("3px-tile.png");
 }
 
 .container {
